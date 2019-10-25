@@ -113,5 +113,14 @@ function pickMistery () {
     const weapon = selectRandom(weaponsArray);
     const room = selectRandom(roomsArray);
 
-    return 
+    return {
+        suspect,
+        weapon,
+        room
+    };
+}
+
+function revealMystery (envelope) {
+    
+       console.log(`${envelope.suspect.FirstName} ${envelope.suspect.LastName} killed Mr. Body in the ${envelope.room.name} using a ${envelope.weapon.name}`);
 }
